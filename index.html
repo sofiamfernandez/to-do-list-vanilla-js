@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo List with Vanilla JS</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <script src="script.js" type="text/javascript" defer></script>
+</head>
+<body>
+    <h2>To Do List - Vanilla javascript</h2>
+    <div class="list roundBorder">
+        <div class="date">
+            <div class="dateLeft">
+                <div id="dateNumber"></div>
+                <div>
+                    <div id="dateMonth"></div>
+                    <div id="dateYear"></div>
+                </div>
+                
+            </div>
+            <div id="dateText"></div>
+        </div>
+        <form onsubmit="addNewTask(event)" action="">
+            <input type="text" name="taskText" autocomplete="off" aria-placeholder="Nueva tarea">
+            <button type="submit" class="addTaskButton">+</button>
+            <button type="button" class="orderButton roundBorder" onclick="renderOrderedTask()">ORDENAR</button>
+        </form>
+        <div id="tasksContainer"></div>
+
+    </div>
+    <footer><p>Practices by Sophie Ferdz &hearts;</p></footer>
+    
+</body>
+</html>
